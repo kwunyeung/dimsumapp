@@ -227,7 +227,7 @@
 /**
  * A random numeric string (digits only) used to encrypt/decrypt strings.
  */
-	Configure::write('Security.cipherSeed', '76859309657453542496749683645');
+//	Configure::write('Security.cipherSeed', '76859309657453542496749683645');
 
 /**
  * Apply timestamps with the last modified time to static assets (js, css, images).
@@ -237,7 +237,12 @@
  * Set to `true` to apply timestamps when debug > 0. Set to 'force' to always enable
  * timestamping regardless of debug value.
  */
-	//Configure::write('Asset.timestamp', true);
+//	//Configure::write('Asset.timestamp', true);
+
+
+	Configure::write('Security.salt', 'mhrU3zvPHNaQ89bSwtyT7WTFH1Yhxn1KviuoIQ3g');
+	Configure::write('Security.cipherSeed', '39729802149017575489675988245');
+
 
 /**
  * Compress CSS output by removing comments, whitespace, repeating tags, etc.
